@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SCOPE — Sécurité mobile</title>
+<meta name="description" content="SCOPE développe un équipement dédié à l'analyse et à la sécurité des terminaux mobiles.">
+
+<!-- Police -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+<header>
+    <div class="container header-inner">
+
+    <a href="#accueil" class="logo">
+        <span>SCOPE</span>
+    </a>
+
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#boitier">Le boîtier</a>
+        <a href="#approche">Notre approche</a>
+        <a href="#b2b">Professionnels</a>
+        <a href="#contact" class="header-button">Contact</a>
+    </nav>
+
+    <button id="menu-button" aria-label="Ouvrir le menu">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+</div>
+
+<div id="mobile-menu">
+    <a href="#accueil">Accueil</a>
+    <a href="#boitier">Le boîtier</a>
+    <a href="#approche">Notre approche</a>
+    <a href="#b2b">Professionnels</a>
+    <a href="#contact">Contact</a>
+</div>
+
+
+</header>
+
+<main>
+
+<section id="accueil" class="hero">
+    <div class="container hero-grid">
+
+        <div class="hero-content">
+
+            <span class="eyebrow">
+                Cybersécurité mobile
+            </span>
+
+            <h1>
+                La sécurité mobile, autrement.
+            </h1>
+
+            <p class="hero-text">
+                SCOPE développe un équipement dédié à l'analyse
+                des terminaux mobiles. Notre objectif : rendre les
+                contrôles de sécurité plus simples, plus rapides
+                et plus accessibles.
+            </p>
+
+            <div class="actions">
+                <a href="#boitier" class="button button-primary">
+                    Découvrir le boîtier
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+
+                <a href="#contact" class="button button-secondary">
+                    Nous contacter
+                </a>
+            </div>
+
+            <p class="hero-note">
+                Projet développé à Vannes, en Bretagne.
+            </p>
+
+        </div>
+
+
+        <!-- BOITIER -->
+
+        <div id="boitier">
+
+            <div class="device-card">
+
+                <div class="device-header">
+                    <span class="device-title">
+                        Prototype SCOPE
+                    </span>
+
+                    <span class="device-status">
+                        ● Modèle 3D
+                    </span>
+                </div>
+
+                <div id="canvas3d"></div>
+
+                <div class="device-footer">
+
+                    <div class="device-info">
+                        <strong>Équipement dédié</strong>
+                        <span>Analyse depuis le boîtier</span>
+                    </div>
+
+                    <div class="device-info">
+                        <strong>Connexion physique</strong>
+                        <span>Interfaces adaptées</span>
+                    </div>
+
+                    <div class="device-info">
+                        <strong>Autonome</strong>
+                        <span>Traitement maîtrisé</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- INTRO -->
+
+<section class="section-border">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="eyebrow">Le constat</span>
+
+            <h2>
+                Les smartphones sont devenus des équipements sensibles.
+            </h2>
+
+            <p>
+                Données professionnelles, conversations, documents,
+                comptes et informations personnelles : un seul appareil
+                peut concentrer une quantité importante d'informations.
+            </p>
+        </div>
+
+
+        <div class="features">
+
+            <article class="feature">
+                <div class="feature-number">01</div>
+
+                <h3>Identifier</h3>
+
+                <p>
+                    Disposer d'un moyen simple pour vérifier l'état
+                    d'un ordiphone.
+                </p>
+            </article>
+
+
+            <article class="feature">
+                <div class="feature-number">02</div>
+
+                <h3>Analyser</h3>
+
+                <p>
+                    Utiliser un équipement dédié pour réaliser des
+                    contrôles dans un environnement pensé pour
+                    l'analyse mobile.
+                </p>
+            </article>
+
+
+            <article class="feature">
+                <div class="feature-number">03</div>
+                <h3>Comprendre</h3>
+                <p>
+                    Présenter les résultats de manière claire afin
+                    de faciliter la prise de décision et, lorsque
+                    nécessaire, l'intervention d'un spécialiste.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- APPROCHE -->
+<section id="approche" class="section-border">
+
+    <div class="container">
+
+        <div class="two-columns">
+
+            <div class="section-heading">
+                <span class="eyebrow">Notre approche</span>
+
+                <h2>
+                    Partir du besoin réel.
+                </h2>
+
+                <p>
+                    Les outils de cybersécurité peuvent rapidement
+                    devenir complexes. SCOPE cherche à réduire cette
+                    complexité au niveau de l'utilisation.
+                </p>
+            </div>
+
+
+            <div class="problem-list">
+
+                <div class="problem">
+                    <h3>
+                        Des outils parfois difficiles à utiliser
+                    </h3>
+
+                    <p>
+                        L'analyse mobile demande souvent des
+                        connaissances techniques et plusieurs outils.
+                    </p>
+                </div>
+
+
+                <div class="problem">
+                    <h3>
+                        Des situations qui nécessitent de la réactivité
+                    </h3>
+                    <p>
+                        Lorsqu'un appareil est suspect, pouvoir
+                        rapidement effectuer un premier contrôle
+                        peut être utile.
+                    </p>
+                </div>
+
+                <div class="problem">
+                    <h3>
+                        Un besoin de matériel spécialisé
+                    </h3>
+                    <p>
+                        Notre approche repose sur un équipement
+                        physique conçu spécifiquement autour
+                        de l'analyse des ordiphones.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div style="height:70px;"></div>
+
+
+    </div>
+
+</section>
+<!-- B2B -->
+<section id="b2b" class="b2b-section">
+    <div class="container">
+
+        <div class="b2b-header">
+            <div class="b2b-label">
+                <i class="fa-solid fa-briefcase"></i>
+                Filière Professionnelle B2B
+            </div>
+
+            <h2>
+                Réseau B2B &amp; Délégation d'Analyses Forensic
+            </h2>
+            <p>
+                Pour les entreprises, institutions et cabinets d'experts
+                confrontés à des compromissions de haute intensité, SCOPE
+                déploie un réseau B2B structuré permettant de déléguer et
+                d'externaliser en toute sécurité les analyses forensiques
+                complexes.
+            </p>
+        </div>
+        <h2>
+            Nos partenaires et références
+        </h2>
+        <div class="reference-card">
+                <div class="reference-logo">
+                    <span>SYNACTIV</span>
+                </div>
+
+                <div class="reference-content">
+                    <strong>Synacktiv</strong>
+                    <span>Cybersécurité &amp; Digital Forensics</span>
+                </div>
+            </div>
+
+              <div class="reference-card">
+                <div class="reference-logo">
+                    <span>LEXFO</span>
+                </div>
+
+                <div class="reference-content">
+                    <strong>Lexfo</strong>
+                    <span>Cybersecurity · Investigation · Response</span>
+                </div>
+            </div>
+
+             <!-- Synetis -->
+            <div class="reference-card">
+                <div class="reference-logo">
+                    <span>SYNETIS</span>
+                </div>
+
+                <div class="reference-content">
+                    <strong>Synetis</strong>
+                    <span>Cybersécurité · Incident Response · DFIR</span>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="b2b-grid">
+
+            <article class="b2b-card">
+                <div class="b2b-icon">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+                <div>
+                    <h3>Partenariats B2B</h3>
+                    <p>
+                        Intégration de boîtiers SCOPE pour sécuriser et auditer
+                        les flottes d'ordiphones d'entreprise.
+                    </p>
+                </div>
+            </article>
+
+            <article class="b2b-card">
+                <div class="b2b-icon">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                </div>
+                <div>
+                    <h3>Délégation Forensic</h3>
+                    <p>
+                        Possibilité de transférer les cas complexes pour une
+                        analyse approfondie par nos experts accrédités.
+                    </p>
+                </div>
+            </article>
+
+            <article class="b2b-card">
+                <div class="b2b-icon">
+                    <i class="fa-solid fa-network-wired"></i>
+                </div>
+
+                <div>
+                    <h3>Réponse Incidents</h3>
+
+                    <p>
+                        Rapports d'investigation certifiés et remédiation
+                        rapide face aux cyberattaques ciblées.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+        
+    </div>  
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="section-border">
+
+    <div class="container">
+
+        <div class="contact">
+
+            <div class="contact-header">
+
+                <span class="eyebrow">
+                    Contact
+                </span>
+                <h2>
+                    Parlons de votre besoin.
+                </h2>
+                <p>
+                    Vous souhaitez découvrir le projet, discuter
+                    d'un partenariat ou en savoir plus sur le boîtier ?
+                    Écrivez-nous.
+                </p>
+            </div>
+            <form id="contact-form">
+                <div class="form-row">
+                    <div>
+                        <label for="name">
+                            Nom
+                        </label>
+
+                        <input
+                            id="name"
+                            type="text"
+                            placeholder="Votre nom"
+                            required
+                        >
+                    </div>
+                    <div>
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            id="email"
+                            type="email"
+                            placeholder="vous@entreprise.fr"
+                            required
+                        >
+                    </div>
+
+                </div>
+                <div>
+
+                    <label for="subject">
+                        Sujet
+                    </label>
+
+                    <select id="subject">
+
+                        <option>
+                            Découvrir SCOPE
+                        </option>
+
+                        <option>
+                            Démonstration
+                        </option>
+
+                        <option>
+                            Partenariat professionnel
+                        </option>
+
+                        <option>
+                            Autre
+                        </option>
+
+                    </select>
+
+                </div>
+                <div>
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        placeholder="Expliquez-nous votre besoin..."
+                        required
+                    ></textarea>
+
+                </div>
+                <button
+                    type="submit"
+                    class="button button-primary"
+                    style="justify-content:center;border:0;cursor:pointer;"
+                >
+                    Envoyer
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <div id="success" class="success">
+                    Votre message a bien été pris en compte.
+                    Nous reviendrons vers vous rapidement.
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+<div class="container footer-inner">
+
+    <div class="footer-copy">
+        © 2026 SCOPE — Vannes, France
+    </div>
+
+    <div class="footer-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+</div>
+
+
+</footer>
+
+<script src="index.js"></script>
+
+</body>
+</html>
